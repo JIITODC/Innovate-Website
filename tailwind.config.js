@@ -26,7 +26,20 @@ export default {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, 
+        function ({addUtilities}){
+      const newUtilities = {
+        '.no-scrollbar::-webkit-scrollbar':{
+          display: 'none',
+        },
+        '.no-scrollbar':{
+          '-ms-overflow-style':'none',
+          'scrollbar-width': 'none'
+        },
+      }
+      addUtilities(newUtilities) 
+    }
+  ],
 }
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
