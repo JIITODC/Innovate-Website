@@ -3,8 +3,9 @@ import { Background } from './uiComp/Background'
 
 function Homepage() {
   return (
-    <div>
-       <Background /> 
+    <div className='h-screen w-screen no-scrollbar overflow-y-scroll overflow-x-hidden'>
+       <Background />
+       <div className='h-screen w-screen'></div>
     </div>
   )
 }
