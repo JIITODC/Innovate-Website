@@ -1,8 +1,8 @@
 const Button = ({ title }) => {
   return (
     <button
-      disabled={true}
-      className="z-2 cursor-not-allowed"
+      // disabled={true}
+      className="z-2"
     >
       <div className="bg-[url('/hero/purpule_button.svg')] bg-no-repeat bg-center bg-contain z-10">
         <div className=" place-content-center flex justify-center">

@@ -31,14 +31,14 @@ const Hero = () => {
               <h1 className="font-bold text-center lg:text-left text-4xl lg:text-6xl 2xl:text-7xl leading-[4.5rem]">
                 <Typewriter
                   options={{
-                    strings: ["Qiskit | Fall Fest Algiers"],
+                    strings: ["Innovate 2.0"],
                     autoStart: true,
                     loop: true,
                   }}
                 />
               </h1>
               <p className="font-medium text-center lg:text-left leading-[2rem] lg:text-2xl 2xl:text-4xl 2xl:leading-[2.875rem]">
-                Your chance to discover the Quantum Computing world!
+                Your chance to showcase your skills!
               </p>
               <div className="flex items-end">
                 <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px]">
@@ -58,10 +58,10 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center">
-            <div className="hidden lg:flex">
+            {/* <div className="hidden lg:flex">
               <Image src={GDGAlgiers} />
-            </div>
-            <CounterContainer countDownLimit={1666425600000} />
+            </div> */}
+            <CounterContainer countDownLimit={"2024-11-25T00:00:00Z"} />
           </div>
 
           <div className="w-12 h-12 absolute bottom-16 left-8">
