@@ -15,7 +15,7 @@ const Navbar = () => {
             <Image src={WTMAlgiers} alt="WTM Algiers" />
           </div>
 
-          <ul className="hidden lg:flex items-center text-xl gap-16 font-medium text-qiskit-white 2xl:text-4xl 2xl:gap-8 2xl:w-screen 2xl:justify-end">
+          <ul className="hidden lg:flex items-center text-xl gap-16 font-medium text-qiskit-white 2xl:text-4xl 2xl:gap-8 2xl:w-screen 2xl:justify-center">
             {NavLinks.map((navLink, idx) => {
               return (
                 <Link key={idx} href={navLink.redirect}>
