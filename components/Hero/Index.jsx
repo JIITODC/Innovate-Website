@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center">
             <div className="flex flex-col gap-7 flex-1 lg:pl-12 text-qiskit-white">
-              <h1 className="font-bold text-center lg:text-left text-4xl lg:text-6xl 2xl:text-7xl leading-[4.5rem]">
+              <h1 className="font-bold text-center lg:text-left text-4xl lg:text-6xl 2xl:text-7xl leading-[4.5rem] z-10">
                 <Typewriter
                   options={{
                     strings: ["Innovate 2.0"],
@@ -41,10 +41,10 @@ const Hero = () => {
                 Your chance to showcase your skills!
               </p>
               <div className="flex items-end">
-                <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px]">
+                <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px] 2xl:mb-[70px]">
                   <Image src={Arrow} layout="fill" />
                 </div>
-                <div className="mb-[-50px] 2xl:mb-[-110px] cursor-not-allowed">
+                <div className="mb-[-50px] 2xl:mb-[-20px] cursor-not-allowed">
                   <Purpulebutton title={"Register Now!"} />
                 </div>
               </div>
