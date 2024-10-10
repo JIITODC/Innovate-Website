@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Index";
 import Hero from "../components/Hero/Index";
 export default function Home() {
   return (
-    <>
+    <div className="h-screen w-screen no-scrollbar overflow-y-scroll overflow-x-hidden">
       <Head>
         <title>Innovate 2.0</title>
         <link rel="shortcut icon" href="/qiskit.png" />
@@ -25,6 +25,6 @@ export default function Home() {
         <Agenda />
       </main> 
       <Footer />
-    </>
+    </div>
   );
 }
