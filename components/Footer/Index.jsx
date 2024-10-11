@@ -10,14 +10,14 @@ import Tilt from "react-parallax-tilt";
 
 const Footer = () => {
   return (
-    <footer className="mt-32 footer-bg text-qiskit-white flex flex-col gap-6 relative">
+    <footer className="bg-qiskit-blue-normal text-qiskit-white flex flex-col gap-6 relative">
       <div className="hidden lg:block absolute top-4 left-[33rem]">
         <Image src={GlobeShape} height={42} width={42} />
       </div>
       <div className="flex flex-col items-center lg:items-start lg:flex-row">
         <div className="cursor-pointer -mt-16 order-first lg:order-last ">
           <Tilt>
-            <Image src={Qiskit} alt="Qiskit Fall Fest Algiers" />
+            {/* <Image src={Qiskit} alt="Qiskit Fall Fest Algiers" /> */}
           </Tilt>
         </div>
         <div className="pt-14 pl-4 pr-4 lg:pl-11 lg:pr-0 2xl:pl-16">

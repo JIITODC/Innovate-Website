@@ -18,7 +18,7 @@ const OurPartners = () => {
     }
   ];
   return (
-    <section id="our-partners" className="section-container pt-12 lg:pt-24">
+    <section id="our-partners" className="px-4 lg:px-11 2xl:px-16 bg-qiskit-black/95 pt-12 lg:pt-24">
       <SectionTitle title={"Our Partners"} />
       <div className="flex flex-row">
         <div className=" w-1/12 ml-6">
@@ -33,7 +33,7 @@ const OurPartners = () => {
           </div>
         </div>
         <div className="w-10/12">
-          <div className="flex flex-wrap items-center justify-center">
+          <div className="flex flex-wrap items-center justify-center text-qiskit-white">
             {partners.map((partner, index) => (
               <div
                 key={index}

@@ -4,6 +4,10 @@
 
 .section-container {
   @apply px-4 lg:px-11 2xl:px-16;
+  background-image: url('../images/hero/Hero_image.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: 120% auto; /* Adjust size of the background */
 }
 
 .about-bg {
@@ -22,7 +26,7 @@
 .burger-line {
   @apply h-1 w-11 bg-qiskit-white rounded;
 }
-.hero-bg {
+/* .hero-bg {
   background: radial-gradient(
     137.29% 137.29% at 50% 50%,
     #82cfff 0%,
@@ -32,7 +36,7 @@
     #093256 80.54%,
     #00264a 91.18%
   );
-}
+} */
 .footer-bg {
   background: radial-gradient(
     137.29% 137.29% at 50% 50%,

@@ -11,7 +11,7 @@ import Sonatrach from "../../images/logos/Sonatrach.png";
 
 const TheyTrustedUs = () => {
   return (
-    <section id="our-sponsors" className="section-container lg:pt-16">
+    <section id="our-sponsors" className="px-4 lg:px-11 2xl:px-16 bg-qiskit-black/95 lg:pt-16">
       <div className="relative">
         <div className="mt-24 lg:mt-7 2xl:mt-12 ">
           <SectionTitle title={"They trusted us"} />
@@ -33,7 +33,7 @@ const TheyTrustedUs = () => {
 
         <div className="flex flex-col justify-center gap-9 2xl:ml-52 lg:ml-40 lg:flex-row lg:mt-20 lg:gap-28 w-3/4 mx-auto  2xl:flex-row 2xl:mt-32 2xl:gap-40">
           <div className="mt-8 h-16 w-44 lg:w-[22rem] lg:h-36 2xl:h-44 2xl:w-[33rem]">
-            <Image src={qBraid} alt="qbraid logo" />
+            <Image src={qBraid} alt="qbraid logo" className=" text-qiskit-white border-4 border-qiskit-white" />
           </div>
 
           {/* <div className="lg:mt-10">

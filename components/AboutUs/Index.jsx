@@ -10,7 +10,7 @@ const AboutUs = () => {
     <section id="about-us">
       {/* <div className=" z-0 h-[100px] max-w-[100%] bg-gradient-to-t from-[#3177ab] to-qiskit-white"></div> */}
 
-      <div className="relative about-bg py-16">
+      <div className="relative bg-qiskit-black/95 py-16">
         <div className="absolute top-1/4 right-4 lg:w-[55px] h-[32px] w-[32px] lg:h-[55px] 2xl:w-[82px] 2xl:h-[82px]">
           <Image src={globe} layout="fill" />
         </div>
@@ -24,11 +24,9 @@ const AboutUs = () => {
         </div>
         <div className="w-10/12 mx-auto flex flex-col gap-8">
           <SectionTitle isWhite={true} title={"About us"} />
-          <div className="flex flex-col gap-12 lg:gap-28">
+          <div className="flex flex-col gap-12 lg:gap-28 text-qiskit-white">
             <ParagSection
-              keyword1={"WTM Algiers "}
-              paragraph1={`also known as the "Women Techmakers Algiers" program, was created to increase visibility, community, and resources for women in technology and also spread learning and build role models globally. It's located at`}
-              keyword2={" the National Higher School of Computer science "}
+              paragraph1={`WTA also known as the "Women Techmakers Algiers" program, was created to increase visibility, community, and resources for women in technology and also spread learning and build role models globally. It's located at  the National Higher School of Computer science`}
               paragraph2={`and dedicated to anyone who's passionate and motivated about the tech field.`}
               img={WTM}
               reverse={false}

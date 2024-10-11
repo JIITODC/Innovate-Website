@@ -9,7 +9,7 @@ import computer from "../../images/shapes/computer.png";
 
 const AboutEvent = () => {
     return (
-    <section id="about-event" className="section-container pt-12 lg:pt-24"> 
+    <section id="about-event" className="px-4 bg-qiskit-black/95 lg:px-11 2xl:px-16 pt-12 lg:pt-24"> 
       <div className="relative">
         <div className="absolute right-0 top-0 sm:right-[596px] sm:top-0 w-[28px] h-[30px]  lg:w-[47px] lg:h-[50px] 2xl:w-[70px] 2xl:h-[70px]">
           <Image 
@@ -59,14 +59,14 @@ const AboutEvent = () => {
         <div className= "gap-8 row-2 lg:columns-2 mt-[50px]">
           <div><Image src={Map} alt="" /></div>
           <div className="gap-8 rows-2 p-4 sm:p-10">
-            <p className="text-xl 2xl:text-3xl lg:text-2xl"><b>The Qiskit Fall Fest</b> is a collection of quantum computing events on college campuses around the world, with support from the entire IBM Quantum team. This year <b>WTM Algiers</b> is one of the 34 communities which are hosting the Qiskit Fall Fest event.</p>
+            <p className="text-xl 2xl:text-3xl lg:text-2xl text-qiskit-white"><b>The Qiskit Fall Fest</b> is a collection of quantum computing events on college campuses around the world, with support from the entire IBM Quantum team. This year <b>WTM Algiers</b> is one of the 34 communities which are hosting the Qiskit Fall Fest event.</p>
             <div className="gap-4 columns-2 2xl:text-4xl lg:text-3xl text-xl font-bold mt-[15px] pr-2">
-              <div className="flex-row">
+              <div className="flex-row text-qiskit-white">
                 <p className="2xl:text-7xl lg:text-6xl text-2xl">1ST</p>
                 <p className="2xl:text-4xl lg:text-3xl sm:text-xl text-base">In Africa and</p>
                 <p className="2xl:text-4xl lg:text-3xl sm:text-xl text-base">MENA Region</p>
               </div>
-              <div className="flex items-start gap-2 ">
+              <div className="flex items-start gap-2 text-qiskit-white">
                 <p className="2xl:text-7xl lg:text-6xl text-2xl">+8</p>
                 <p className="2xl:text-4xl lg:text-3xl sm:text-xl text-base mt-[25px]">Talks Workshops Challenges</p>
               </div>

@@ -7,7 +7,7 @@ import Bluebutton from "../shared/Bluebutton";
 const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
   return (
-    <header className="pt-8 lg:pt-1 flex flex-col gap-8">
+    <header className=" lg:pt-1 flex flex-col gap-8">
       {/* Desktop menu */}
       <div>
         <div className="flex justify-between items-center">

@@ -9,7 +9,7 @@ import YellowButton from "../shared/YellowButton";
 
 const Agenda = () => {
   return (
-    <section id="agenda" className="relative section-container">
+    <section id="agenda" className="px-4 lg:px-11 2xl:px-16 bg-qiskit-black/95 relative ">
       <SectionTitle title={"Agenda"}> </SectionTitle>
       <div className="md:hidden visible absolute left-0 top-0 z-25 sm:w-[80px] sm:h-[80px] w-[50px] h-[50px]">
         <Image src={atom} alt="maqam chahid" layout="fill" />
@@ -29,7 +29,7 @@ const Agenda = () => {
 
         <div className="col-span-4 flex flex-col justify-center mt-[20px]">
           <YellowButton title={"Saturday, October 22nd"} />
-          <div className=" bg-qiskit-blue-lighter  bg-opacity-40 justify-center w-full md:pl-[50px] pl-[10px] mb-20 pr-[10px] md:pr-[30px] lg:py-[80px] md:py[70px] py-8 border-4 md:border-8 md:mt-[-30px] mt-[-10px]">
+          <div className=" bg-qiskit-blue-normal bg-opacity-90 justify-center w-full md:pl-[50px] pl-[10px] mb-20 pr-[10px] md:pr-[30px] lg:py-[80px] md:py[70px] py-8 border-4 md:border-8 md:mt-[-30px] mt-[-10px]">
             <div className="">
               <div className=" sm:text-xl font-medium md:font-semibold text-xs md:px[10px] ">
                 <div className="flew flex-row">
