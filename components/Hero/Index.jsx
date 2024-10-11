@@ -14,9 +14,9 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
   return (
     <section  className="min-h-screen hero-bg bg-qiskit-black/95">
-      <div className="section-container md:pb-0 md:h-[1000px] lg:h-[700px]">
+      <div className="section-container md:pb-0 md:h-[1000px] lg:h-screen">
         <Navbar />
-        <div className="flex flex-col gap-16  lg:mt-28 lg:gap-0 relative">
+        <div className="flex flex-col gap-16  lg:mt-10 lg:gap-0 relative">
           <div className="w-12 h-12 absolute top-1/4 left-4 lg:top-4 lg:left-4">
             <Image src={Atom} />
           </div>
@@ -40,11 +40,11 @@ const Hero = () => {
               <p className="font-medium text-center lg:text-left leading-[2rem] lg:text-2xl 2xl:text-4xl 2xl:leading-[2.875rem]">
                 Your chance to showcase your skills!
               </p>
-              <div className="flex items-end lg:mt-20">
-                <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px] 2xl:mb-[70px]">
+              <div className="flex items-end lg:mt-4">
+                <div className="relative h-[67px] bounce w-[67px] 2xl:w-[101px] 2xl:h-[114px] 2xl:mb-[100px]">
                   <Image src={Arrow} layout="fill" />
                 </div>
-                <div className="mb-[-50px] 2xl:mb-[-20px] cursor-not-allowed">
+                <div className="mb-[-50px] 2xl:mb-[20px] cursor-not-allowed">
                   <Purpulebutton title={"Register Now!"} />
                 </div>
               </div>
