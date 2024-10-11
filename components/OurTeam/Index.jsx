@@ -45,56 +45,47 @@ const OurSpeakers = () => {
         <Image src={atom} alt="atombotton" />
       </div>
 
-      <div className="flex items-center md:space-x-8 sm:mt-[40px] md:mt-[100px] lg:space-x-8">
+<div className="flex items-center space-x-8 mt-[100px]">
+  <Swiper
+    ref={swiperRef}
+    spaceBetween={10}
+    slidesPerView={3}
+    centeredSlides={true}
+  >
+    {speakers.map((spk, idx) => {
+      return (
+        <SwiperSlide key={idx}>
+          {({ isActive, isNext, isPrev }) => (
+            <div
+              className={`${
+                isActive
+                  ? "scale-75"
+                  : isPrev || isNext
+                  ? "scale-100"
+                  : "scale-75"
+              } `}
+            >
+              <div className="lg:mt-[50px]">
+                <div className="relative border-qiskit-white border-4">
+                  <Image src={spk.image} alt={spk.name} layout="responsive" />
+                </div>
 
-        <Swiper
-          ref={swiperRef}
-          spaceBetween={10}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            700: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          {speakers.map((spk, idx) => {
-            return (
-              <SwiperSlide key={idx}>
-                {({ isActive, isNext, isPrev }) => (
-                  <div
-                    className={` ${
-                      isActive
-                        ? "lg:scale-75"
-                        : isPrev || isNext
-                        ? "lg:scale-100"
-                        : "lg:scale-75"
-                    }`}
-                  >
-                    <div className="sm:mt-[50px]">
-                      <div className="relative  border-qiskit-white border-4 -z-10">
-                        <Image src={spk.image} alt={spk.name} layout="responsive"/>
-                      </div>
+                <div className="relative w-4/5 mx-auto z-10 -mt-20 text-qiskit-white">
+                  <YellowButton title={spk.name} />
+                </div>
 
-                      <div className="retlative w-4/5 mx-auto z-10 -mt-20 text-qiskit-white">
-                        <YellowButton title={spk.name} />
-                      </div>
+                <div className="mx-auto text-qiskit-white/90 flex justify-center text-[17px] font-semibold">
+                  <p>{spk.profession}</p>
+                </div>
+              </div>
+            </div>
+          )}
+        </SwiperSlide>
+      );
+    })}
+  </Swiper>
+</div>
 
-                      <div className="mx-auto text-qiskit-white/90 flex justify-center text-[17px] font-semibold">
-                        <p> {spk.profession} </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
     </section>
   );
 };
