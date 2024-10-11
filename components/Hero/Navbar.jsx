@@ -12,8 +12,8 @@ const Navbar = () => {
     <header className=" lg:pt-1 flex flex-col gap-8">
       {/* Desktop menu */}
       <div>
-        <div className="flex justify-between items-center pt-4">
-          <div className="lg:absolute w-16 pt-4">
+        <div className="flex justify-between items-center pt-2">
+          <div className="w-20 h-16">
             <Image src={JaypeeLogo} alt="Jaypee Logo" />
           </div>
 
@@ -32,7 +32,7 @@ const Navbar = () => {
             })}
           </ul>
 
-          <div className="hidden lg:flex lg:ml-8 lg:w-16">
+          <div className="hidden lg:flex lg:ml-8 lg:w-20">
             {/* <Bluebutton title={"Join us"} /> */}
             <Image src={jyc} alt="JYC Logo" />
           </div>
