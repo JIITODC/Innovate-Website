@@ -50,7 +50,7 @@ const OurSpeakers = () => {
     ref={swiperRef}
     spaceBetween={10}
     slidesPerView={3}
-    centeredSlides={true}
+    centeredSlides={false}
   >
     {speakers.map((spk, idx) => {
       return (
