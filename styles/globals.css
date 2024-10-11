@@ -7,7 +7,7 @@
   background-image: url('../images/hero/Hero_image.jpg');
   background-repeat: no-repeat;
   background-position: 50% 10%;
-  background-size: 120% auto; /* Adjust size of the background */
+  background-size: 120% auto;
 }
 
 .about-bg {
@@ -37,16 +37,29 @@
     #00264a 91.18%
   );
 } */
+ 
 .footer-bg {
-  background: radial-gradient(
-    137.29% 137.29% at 50% 50%,
-    #3db4fe 0%,
-    #58bcfc 3.4%,
-    #398ac4 34.91%,
-    #215178 61.05%,
-    #093256 80.54%,
-    #00264a 91.18%
-  );
+  background: linear-gradient(135deg,
+      #000000 0%,
+      #2F0B3A 25%,
+      #5C1358 50%,
+      #2F0B3A 70%,
+      #5C1358 80%,
+      #000000 100%);
+  background-size: 200% 200%;
+  animation: moveGradient 10s ease infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 html {

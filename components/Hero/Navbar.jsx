@@ -1,18 +1,20 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import WTMAlgiers from "../../images/logos/WTMAlgiers-white.png";
+import JaypeeLogo from "../../images/hero/JaypeeLogo.png";
 import NavLinks from "./links";
 import Bluebutton from "../shared/Bluebutton";
+import jyc from "../../images/hero/jyc.png"
+
 const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
   return (
     <header className=" lg:pt-1 flex flex-col gap-8">
       {/* Desktop menu */}
       <div>
-        <div className="flex justify-between items-center">
-          <div>
-            <Image src={WTMAlgiers} alt="WTM Algiers" />
+        <div className="flex justify-between items-center pt-4">
+          <div className="absolute w-16 pt-4">
+            <Image src={JaypeeLogo} alt="Jaypee Logo" />
           </div>
 
           <ul className="hidden lg:flex items-center text-xl gap-16 font-medium text-qiskit-white 2xl:text-4xl 2xl:gap-8 2xl:w-screen 2xl:justify-center">
@@ -30,8 +32,9 @@ const Navbar = () => {
             })}
           </ul>
 
-          <div className="hidden lg:flex lg:ml-8">
-            <Bluebutton title={"Join us"} />
+          <div className="hidden lg:flex lg:ml-8 lg:w-16">
+            {/* <Bluebutton title={"Join us"} /> */}
+            <Image src={jyc} alt="JYC Logo" />
           </div>
 
           <div
