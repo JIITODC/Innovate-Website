@@ -12,8 +12,8 @@ const navLinks = [
     redirect: "#our-partners",
   },
   {
-    content: "Speakers",
-    redirect: "#speakers",
+    content: "Team",
+    redirect: "#team",
   },
   {
     content: "Agenda",

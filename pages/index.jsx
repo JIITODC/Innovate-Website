@@ -5,7 +5,7 @@ import AboutEvent from "../components/AboutEvent/Index";
 import Footer from "../components/Footer/Index";
 import Hero from "../components/Hero/Index";
 import OurPartners from "../components/OurPartners/Index";
-import OurSpeakers from "../components/OurSpeakers/Index";
+import OurTeam from "../components/OurTeam/Index";
 import Agenda from "../components/Agenda/Index";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         <AboutEvent />
         <AboutUs />
         <OurPartners />
-        <OurSpeakers/>
+        <OurTeam/>
         <TheyTrustedUs />
         <Agenda />
       </main> 

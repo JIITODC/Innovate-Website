@@ -16,12 +16,12 @@ const OurSpeakers = () => {
   const swiperRef = useRef(null);
 
   return (
-    <section id="speakers" className="relative bg-qiskit-black/95 px-4 lg:px-11 2xl:px-16">
+    <section id="team" className="relative bg-qiskit-black/95 px-4 lg:px-11 2xl:px-16">
       <div className="mb-12 lg:mb-0">
-        <SectionTitle title={"Our Speakers"} /> 
+        <SectionTitle title={"Our Team"} /> 
       </div>
 
-      <div className="visible absolute sm:bottom-0 sm:right-0 sm:w-[45px] md:top-0 md:right-0 md:w-[55px] md:h-[55px] lg:top-1/4 lg:right-[50px] lg:top-[50px] lg:w-[100px] 2xl:w-[150px] 2xl:h-[120px] z-25 ">
+      <div className="visible absolute sm:bottom-0 sm:right-0 sm:w-[45px] md:top-0 md:right-0 md:w-[55px] md:h-[55px] lg:right-[50px] lg:top-[50px] lg:w-[100px] 2xl:w-[150px] 2xl:h-[120px] z-25 ">
         <Image src={Maqam} alt="maqam" layout="fill" />
       </div>
 
@@ -46,14 +46,6 @@ const OurSpeakers = () => {
       </div>
 
       <div className="flex items-center md:space-x-8 sm:mt-[40px] md:mt-[100px] lg:space-x-8">
-        <div
-          onClick={() => {
-            swiperRef.current.swiper.slidePrev();
-          }}
-          className="cursor-pointer  hidden md:flex  w-[200px] md:w-[120px] lg:w-1/6"
-        >
-          <Image src={LeftArrow} alt="" />
-        </div>
 
         <Swiper
           ref={swiperRef}
@@ -84,11 +76,11 @@ const OurSpeakers = () => {
                     }`}
                   >
                     <div className="sm:mt-[50px]">
-                      <div className="relative  border-qiskit-black border-4 -z-10">
+                      <div className="relative  border-qiskit-white border-4 -z-10">
                         <Image src={spk.image} alt={spk.name} layout="responsive"/>
                       </div>
 
-                      <div className="retlative w-4/5 mx-auto z-10 -mt-20 ">
+                      <div className="retlative w-4/5 mx-auto z-10 -mt-20 text-qiskit-white">
                         <YellowButton title={spk.name} />
                       </div>
 
@@ -102,15 +94,6 @@ const OurSpeakers = () => {
             );
           })}
         </Swiper>
-
-        <div
-          onClick={() => {
-            swiperRef.current.swiper.slideNext();
-          }}
-          className="cursor-pointer  hidden md:flex w-[200px] md:w-[120px] lg:w-1/6"
-        >
-          <Image src={RightArrow} alt="" />
-        </div>
       </div>
     </section>
   );
