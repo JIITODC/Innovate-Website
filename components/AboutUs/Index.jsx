@@ -33,10 +33,10 @@ const AboutUs = () => {
               redirect={"https://www.wtmalgiers.org/"}
             ></ParagSection>
             <ParagSection
-              keyword1={"GDG Algiers "}
-              paragraph1={`is a local group of developers and students who are interested in Google’s developer technology products. It is located at`}
-              keyword2={" the National Higher School of Computer science "}
-              paragraph2={`and hosts a variety of events activities for developers through different events that aim to help the developers community get the latest technology updates.`}
+              // keyword1={"GDG Algiers "}
+              paragraph1={`GDG Algiers is a local group of developers and students who are interested in Google’s developer technology products. It is located at`}
+              // keyword2={" the National Higher School of Computer science "}
+              paragraph2={`the National Higher School of Computer science and hosts a variety of events activities for developers through different events that aim to help the developers community get the latest technology updates.`}
               img={GDG}
               reverse={true}
               redirect={"https://www.gdgalgiers.com"}
