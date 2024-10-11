@@ -10,6 +10,15 @@
   background-size: 120% auto;
 }
 
+@media (max-width: 600px) {
+  .section-container {
+    background-image: url('../images/hero/Hero_image.jpg');
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: 250% 100%;
+  }
+}
+
 .about-bg {
   background: radial-gradient(
     133.05% 133.05% at 48.02% 29.5%,
@@ -37,7 +46,7 @@
     #00264a 91.18%
   );
 } */
- 
+
 .footer-bg {
   background: linear-gradient(135deg,
       #000000 0%,
