@@ -14,7 +14,7 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
   return (
     <section  className="min-h-screen hero-bg bg-qiskit-black/95">
-      <div className="section-container md:pb-0 md:h-[1000px] lg:h-screen">
+      <div className="section-container h-screen lg:h-screen">
         <Navbar />
         <div className="flex flex-col gap-16  lg:mt-10 lg:gap-0 relative">
           <div className="w-12 h-12 absolute top-1/4 left-4 lg:top-4 lg:left-4">

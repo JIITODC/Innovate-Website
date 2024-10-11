@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* Desktop menu */}
       <div>
         <div className="flex justify-between items-center pt-4">
-          <div className="absolute w-16 pt-4">
+          <div className="lg:absolute w-16 pt-4">
             <Image src={JaypeeLogo} alt="Jaypee Logo" />
           </div>
 
