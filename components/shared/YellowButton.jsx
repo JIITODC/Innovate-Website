@@ -13,7 +13,7 @@ const YellowButton = ({ redirect = "", title }) => {
               </a>
             </Link>
           ) : (
-            <div className="h-[100px] text-center sm:text-[15px] md:text-[15px] lg:text-2xl text-[12px] pt-8 font-semibold">
+            <div className="h-[100px] text-center sm:text-[15px] md:text-[15px] lg:text-2xl text-[12px] pt-6 font-semibold text-qiskit-white">
               {title}
             </div>
           )}

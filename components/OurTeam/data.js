@@ -5,18 +5,18 @@ import RickyYoung from "../../images/speakers/Ricky_Young.jpeg";
 export const speakers = [
   {
     image: NaceriddineBelaloui,
-    name: "Ronak",
-    profession: "Position",
+    name: "Ronak Khemka",
+    profession: "General Secretary",
   },
   {
     image: MohamedRouabah,
     name: "Ayush Thakur",
-    profession: "Position",
+    profession: "Vice President",
   },
   {
     image: RickyYoung,
-    name: "Kavim",
-    profession: "Position",
+    name: "Kavim Gupta",
+    profession: "Treasurer",
   },
 
 ];
