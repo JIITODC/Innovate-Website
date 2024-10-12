@@ -28,7 +28,7 @@ const Agenda = () => {
         </div>
 
         <div className="col-span-4 flex flex-col justify-center mt-[20px]">
-          <YellowButton title={"Saturday, October 22nd"} />
+          <YellowButton title={"Events TimeLine"} />
           <div className=" bg-qiskit-blue-normal bg-opacity-90 justify-center w-full md:pl-[50px] pl-[10px] mb-20 pr-[10px] md:pr-[30px] lg:py-[80px] md:py[70px] py-8 border-4 md:border-8 md:mt-[-30px] mt-[-10px]">
             <div className="">
               <div className=" sm:text-xl font-medium md:font-semibold text-xs md:px[10px] ">
@@ -40,7 +40,7 @@ const Agenda = () => {
                         className="flex flex-row justify-stretch mx-auto "
                       >
                         <div className="flex flex-none py-2.5 md:pl-10">
-                          <div className="">{agendaInfo.Time}</div>
+                          <div className="">{agendaInfo.Date}</div>
                         </div>
                         <div className="flex pl-2 md:pl-10 py-2.5 ">
                           <div className="">{agendaInfo.event}</div>
